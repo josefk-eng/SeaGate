@@ -91,7 +91,7 @@ class PortfolioImages(models.Model):
     
     
 class ClientImages(models.Model):
-    client = models.CharField(max_length=100)
+    client = models.CharField(max_length=100, default="")
     client_image = models.ImageField(upload_to="img/clients")
 
     class Meta:
